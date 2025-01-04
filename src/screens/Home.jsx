@@ -1,8 +1,8 @@
-import { Pressable, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect } from 'react';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
-import Animated, { useSharedValue, withSpring } from "react-native-reanimated";
+import { useSharedValue, withSpring } from "react-native-reanimated";
 
 const Home = () => {
 
@@ -28,7 +28,7 @@ const Home = () => {
     }, [])
 
   return (
-    <View className="bg-cyan-500 flex-1 justify-center items-center">
+    <View className="bg-gray-700 flex-1 justify-center items-center">
         <StatusBar style="dark" />
         <View className="flex flex-row gap-4">
             <Text className="text-2xl text-center text-white font-bold">Placeholder</Text>
